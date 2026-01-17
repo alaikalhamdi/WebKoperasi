@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function AdminDashboard() {
   const router = useRouter();
-  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+  const [isLoggedIn] = useState(() => {
     if (typeof window !== 'undefined') {
       return !!localStorage.getItem('adminLoggedIn');
     }

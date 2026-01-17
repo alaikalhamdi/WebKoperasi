@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 interface Activity {
   id: number;
@@ -25,17 +26,17 @@ export default function Activities() {
         <h2 className="text-3xl font-semibold mb-4">Galeri Foto/Video</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white p-4 rounded shadow">
-            <img src="/placeholder-activity1.jpg" alt="Kegiatan 1" className="w-full h-48 object-cover mb-2" />
+            <Image src="/placeholder-activity1.jpg" alt="Kegiatan 1" width={400} height={192} className="w-full h-48 object-cover mb-2" />
             <h3 className="text-xl font-semibold">Rapat Anggota</h3>
             <p>Deskripsi kegiatan rapat anggota.</p>
           </div>
           <div className="bg-white p-4 rounded shadow">
-            <img src="/placeholder-activity2.jpg" alt="Kegiatan 2" className="w-full h-48 object-cover mb-2" />
+            <Image src="/placeholder-activity2.jpg" alt="Kegiatan 2" width={400} height={192} className="w-full h-48 object-cover mb-2" />
             <h3 className="text-xl font-semibold">Distribusi Bantuan</h3>
             <p>Deskripsi distribusi bantuan sembako.</p>
           </div>
           <div className="bg-white p-4 rounded shadow">
-            <img src="/placeholder-activity3.jpg" alt="Kegiatan 3" className="w-full h-48 object-cover mb-2" />
+            <Image src="/placeholder-activity3.jpg" alt="Kegiatan 3" width={400} height={192} className="w-full h-48 object-cover mb-2" />
             <h3 className="text-xl font-semibold">Pelatihan</h3>
             <p>Deskripsi pelatihan wirausaha.</p>
           </div>

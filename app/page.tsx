@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen flex items-center bg-gradient-to-r from-black to-transparent">
+      <section className="min-h-screen flex items-center bg-linear-to-r from-black to-transparent">
         <div className="container mx-auto px-4">
           <div className="max-w-md mr-auto text-left">
             <h1 className="text-5xl font-bold text-white mb-4">Selamat Datang di Koperasi Desa Koto Jayo Bersamo</h1>
